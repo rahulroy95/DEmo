@@ -7,28 +7,6 @@ pipeline {
                  stage('Build') {
                  steps {
                      echo 'Hi, Rahul. Starting to build the App.'
-                          post {
-                                              
-                                               aborted {
-                                                 // One or more steps need to be included within each condition's block.
-                                               }
-                                               success {
-                                                 // One or more steps need to be included within each condition's block.
-                                               }
-                                               failure {
-                                                 // One or more steps need to be included within each condition's block.
-                                               }
-                                               unsuccessful {
-                                                 // One or more steps need to be included within each condition's block.
-                                               }
-                                               fixed {
-                                                 // One or more steps need to be included within each condition's block.
-                                               }
-                                               changed {
-                                                 // One or more steps need to be included within each condition's block.
-                                               }
-                             }
-
                   }
                   }
                  stage('Test') {
@@ -52,6 +30,27 @@ pipeline {
                      steps {
                                 echo "App is Prod Ready"
                                 echo 'hello roy its done'
+                              post {
+                                              
+                                               aborted {
+                                                 // One or more steps need to be included within each condition's block.
+                                               }
+                                               success {
+                                                 // One or more steps need to be included within each condition's block.
+                                               }
+                                               failure {
+                                                 // One or more steps need to be included within each condition's block.
+                                               }
+                                               unsuccessful {
+                                                 // One or more steps need to be included within each condition's block.
+                                               }
+                                               fixed {
+                                                 // One or more steps need to be included within each condition's block.
+                                               }
+                                               changed {
+                                                 // One or more steps need to be included within each condition's block.
+                                               }
+                             }
                      }
 
               }
