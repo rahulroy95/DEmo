@@ -29,6 +29,7 @@ pipeline {
                  stage('Prod') {
                      steps {
                                 echo "App is Prod Ready"
+                                mail bcc: '', body: 'hi rahul, your pipeline works fine', cc: '', from: '', replyTo: '', subject: 'test success', to: 'rahulroyyadav95@gmail.com'
                               }
 
               }
