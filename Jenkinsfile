@@ -5,6 +5,11 @@ pipeline {
          agent any
          stages {
                  stage('Build') {
+                          when{
+                                   expression{
+                                   BRANCH_HOME == 'dev' || BRANCH_HOME == 'master'
+                                   }
+                          }
                  steps {
                      echo 'Hi, Rahul. Starting to build the App.'
                  }
