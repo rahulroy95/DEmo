@@ -14,7 +14,7 @@ pipeline {
                     input('Do you want to proceed?')
                  }
                  }
-                 stage('Deploy') {
+                 stage('Deploy this') {
                  parallel {
                             stage('Deploy start ') {
                            steps {
