@@ -12,9 +12,10 @@ pipeline {
                  stage('Test') {
                  steps {
                     input('Do you want to proceed?')
+                          checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/rahulroy95/Hello_World_Java.git']]])
                  }
                  }
-                 stage('Deploy') {
+                 stage('Deploy this') {
                  parallel {
                             stage('Deploy start ') {
                            steps {
