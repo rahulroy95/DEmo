@@ -9,20 +9,13 @@ pipeline {
                      echo 'Hi, Rahul. Starting to build the App.'
                           post {
                                                always {
-                                                 // One or more steps need to be included within each condition's block.
+                                                 run always.
                                                }
                                                unstable {
-                                                 // One or more steps need to be included within each condition's block.
+                                                 
+                                                        unstable// One or more steps need to be included within each condition's block.
                                                }
-                                               notBuilt {
-                                                 // One or more steps need to be included within each condition's block.
-                                               }
-                                               cleanup {
-                                                 // One or more steps need to be included within each condition's block.
-                                               }
-                                               regression {
-                                                 // One or more steps need to be included within each condition's block.
-                                               }
+                                               
                                                aborted {
                                                  // One or more steps need to be included within each condition's block.
                                                }
