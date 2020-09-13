@@ -7,6 +7,42 @@ pipeline {
                  stage('Build') {
                  steps {
                      echo 'Hi, Rahul. Starting to build the App.'
+                          post {
+                                               always {
+                                                 // One or more steps need to be included within each condition's block.
+                                               }
+                                               unstable {
+                                                 // One or more steps need to be included within each condition's block.
+                                               }
+                                               notBuilt {
+                                                 // One or more steps need to be included within each condition's block.
+                                               }
+                                               cleanup {
+                                                 // One or more steps need to be included within each condition's block.
+                                               }
+                                               regression {
+                                                 // One or more steps need to be included within each condition's block.
+                                               }
+                                               aborted {
+                                                 // One or more steps need to be included within each condition's block.
+                                               }
+                                               success {
+                                                 // One or more steps need to be included within each condition's block.
+                                               }
+                                               failure {
+                                                 // One or more steps need to be included within each condition's block.
+                                               }
+                                               unsuccessful {
+                                                 // One or more steps need to be included within each condition's block.
+                                               }
+                                               fixed {
+                                                 // One or more steps need to be included within each condition's block.
+                                               }
+                                               changed {
+                                                 // One or more steps need to be included within each condition's block.
+                                               }
+                             }
+
                  }
                  }
                  stage('Test') {
