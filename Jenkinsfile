@@ -8,14 +8,7 @@ pipeline {
                  steps {
                      echo 'Hi, Rahul. Starting to build the App.'
                           post {
-                                               always {
-                                                 run always.
-                                               }
-                                               unstable {
-                                                 
-                                                        unstable// One or more steps need to be included within each condition's block.
-                                               }
-                                               
+                                              
                                                aborted {
                                                  // One or more steps need to be included within each condition's block.
                                                }
@@ -36,8 +29,8 @@ pipeline {
                                                }
                              }
 
-                 }
-                 }
+                  }
+                  }
                  stage('Test') {
                  steps {
                     input('Do you want to proceed?')
